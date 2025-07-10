@@ -46,3 +46,88 @@
     border-radius: var(--borde-redondeado);
     margin-top: 2rem;
 }
+
+.hero,
+.servicios,
+.experiencia,
+.proceso,
+.testimonios,
+.marcas {
+    background-color: var(--gris-medio-claro);
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: var(--borde-redondeado);
+    animation: fadeIn 1s ease-in;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--gris-negro);
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.servicio {
+    background-color: var(--blanco);
+    padding: 1rem;
+    border-radius: var(--borde-redondeado);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: scale(1.03);
+}
+
+/* Proceso con numeración */
+.proceso ol {
+    list-style-position: inside;
+    padding-left: 1rem;
+    color: var(--gris-oscuro);
+}
+
+/* Testimonios */
+.testimonios blockquote {
+    font-style: italic;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.testimonios cite {
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Fade-in animation básica */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-servicios {
+        grid-template-columns: 1fr;
+    }
+
+    .header,
+    .footer {
+        text-align: center;
+        flex-direction: column;
+    }
+}
