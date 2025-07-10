@@ -1,0 +1,11 @@
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--gris-claro);
+    color: var(--gris-negro);
+    padding: var(--espaciado);
+}
+
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
