@@ -10,7 +10,7 @@ main {
 @media (max-width: 480px) {
   .header {
     width: 100%;
-    border-radius: 0; /* Quita esquinas redondeadas */
+    border-radius: 0;
     padding: 0.5rem 1rem;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ main {
   }
 
   .logo__img {
-    width: 50px; /* más pequeño */
+    width: 50px;
     height: auto;
   }
 
@@ -30,17 +30,21 @@ main {
   }
 
   .nav__menu {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 0.4rem;
     margin-top: 0.5rem;
   }
 
+
   .nav__menu a {
     font-size: 0.85rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0.6rem;
   }
 
   main {
-    margin-top: 90px; 
+    margin-top: 90px;
   }
 }
