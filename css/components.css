@@ -45,6 +45,41 @@
     color: var(--gris-medio-claro);
 }
 
+.icono-servicio {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0.8rem;
+}
+
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.grid-marcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 1.5rem;
+}
+
+.icono-marca {
+    width: 90px;
+    height: auto;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icono-marca:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
 .footer {
     background-color: var(--negro);
     color: var(--blanco);
