@@ -9,13 +9,26 @@
 </head>
 
 <body>
-    <header class="header">
-        <!-- Igual que en index -->
-    </header>
+    <div class="site-container">
+        <header class="header" id="inicio">
+            <div class="logo">
+                <img src="img/logo-vertical-blanco.png" alt="Logotipo L&S" class="logo__img" />
+                <h1>L&S Servicio de Mecatrónica Automotriz</h1>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#secciones">Secciones</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
     <main class="proyectos">
         <h2>Proyectos realizados</h2>
-        <button id="btn-toggle" class="boton-toggle">Ver más proyectos</button>
         <section class="grid-proyectos" id="contenedor-proyectos">
 
             <article class="tarjeta">
@@ -49,6 +62,10 @@
                 <h3>Falla de Encendido a través del Osciloscopio</h3>
             </article>
         </section>
+        <div class="volver-inicio">
+            <a href="index.html" class="boton-volver">Volver al inicio</a>
+        </div>
+
     </main>
 
     <footer class="footer">

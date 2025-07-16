@@ -1,16 +1,13 @@
 :root {
-    --gris-claro: #f2f2f2;
-    --gris-medio-claro: #cccccc;
-    --gris-medio: #999999;
-    --gris-oscuro: #333333;
-    --gris-negro: #111111;
+    --negro: #000000;
+    --azul-oscuro: #14213D;
+    --amarillo: #FCA311;
+    --gris: #E5E5E5;
+    --blanco: #FFFFFF;
 
-
-    --blanco: #ffffff;
 
     /* Tipografía */
     --fuente-principal: 'Segoe UI', sans-serif;
-
     --borde-redondeado: 12px;
     --espaciado: 1rem;
 }

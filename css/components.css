@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--gris-negro);
+    background-color: var(--azul-oscuro);
     color: var(--blanco);
     padding: var(--espaciado);
     display: flex;
@@ -39,7 +39,7 @@
 }
 
 .footer {
-    background-color: var(--gris-oscuro);
+    background-color: var(--negro);
     color: var(--blanco);
     text-align: center;
     padding: 1rem;
@@ -53,7 +53,7 @@
 .proceso,
 .testimonios,
 .marcas {
-    background-color: var(--gris-medio-claro);
+    background-color: var(--gris);
     padding: 2rem;
     margin-top: 2rem;
     border-radius: var(--borde-redondeado);
@@ -63,7 +63,7 @@
 h2 {
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--gris-negro);
+    color: var(--azul-oscuro);
 }
 
 .grid-servicios {
@@ -163,8 +163,8 @@ h2 {
 }
 
 .boton-toggle {
-    background-color: var(--gris-oscuro);
-    color: var(--blanco);
+    background-color: var(--amarillo);
+    color: var(--negro);
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: var(--borde-redondeado);
@@ -174,7 +174,7 @@ h2 {
 }
 
 .boton-toggle:hover {
-    background-color: var(--gris-medio);
+    background-color: #e69500;
 }
 
 .proyecto-video {
@@ -182,4 +182,60 @@ h2 {
   height: 200px;
   border-radius: var(--borde-redondeado);
   object-fit: cover;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--gris);
+  padding: 2rem;
+  border-radius: var(--borde-redondeado);
+}
+
+.formulario label {
+  font-weight: bold;
+  color: var(--azul-oscuro);
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 0.6rem;
+  border: 1px solid var(--gris);
+  border-radius: var(--borde-redondeado);
+  font-size: 1rem;
+}
+
+.formulario button {
+  background-color: var(--amarillo);
+  color: var(--negro);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--borde-redondeado);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #e69500; /* tono más oscuro del amarillo */
+}
+
+.volver-inicio {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.boton-volver {
+  display: inline-block;
+  background-color: var(--amarillo);
+  color: var(--negro);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: var(--borde-redondeado);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #e69500;
 }

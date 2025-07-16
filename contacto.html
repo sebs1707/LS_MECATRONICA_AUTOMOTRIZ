@@ -9,18 +9,56 @@
 </head>
 
 <body>
-    <header class="header">
+    <div class="site-container">
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo-vertical-blanco.png" alt="Logo L&S" class="logo__img" />
+                <h1>L&S Mecatrónica Automotriz</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#secciones">Secciones</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <main class="contacto">
+            <h2>Contáctanos</h2>
+            <form id="formulario-contacto" class="formulario">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required />
 
-    </header>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required />
 
-    <main class="contacto">
-        <h2>Contáctanos</h2>
-        <!-- Formulario estará en commit 5 -->
-    </main>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
 
-    <footer class="footer">
-        <p>&copy; 2025 L&S - Todos los derechos reservados.</p>
-    </footer>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="mayorEdad" />
+                    <label for="mayorEdad">Confirmo que soy mayor de edad</label>
+                </div>
+
+                <label for="mensaje">¿Cuál es el problema que presenta tu vehículo?</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <div class="volver-inicio">
+                <a href="index.html" class="boton-volver">Volver al inicio</a>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 L&S Servicio de Mecatrónica Automotriz</p>
+        </footer>
+    </div>
+
+    <script src="js/formulario.js" defer></script>
 </body>
 
 </html>
