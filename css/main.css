@@ -3,3 +3,6 @@
 @import url('layout.css');
 @import url('components.css');
 
+main {
+  margin-top: 80px;
+}

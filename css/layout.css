@@ -11,6 +11,10 @@ body {
     padding: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--fuente-principal);
     background-color: var(--blanco);
